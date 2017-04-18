@@ -73,7 +73,7 @@ import java.lang.annotation.Target;
  *
  *     {@code @Override}
  *     public void channelRead0({@link ChannelHandlerContext} ctx, Message message) {
- *         {@link Channel} ch = e.getChannel();
+ *         {@link Channel} ch = ctx.getChannel();
  *         if (message instanceof LoginMessage) {
  *             authenticate((LoginMessage) message);
  *             <b>loggedIn = true;</b>
